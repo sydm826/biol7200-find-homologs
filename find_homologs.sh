@@ -10,4 +10,4 @@ awk '$3 > 30 && $4 > 0.9 * $5' raw_blast_results.txt > "$output"
 
 wc -l < "$output"
 
-rm raw_blast_results.txt# TODO: add error handling for missing input files
+rm raw_blast_results.txt
