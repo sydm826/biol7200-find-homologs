@@ -9,3 +9,5 @@ tblastn -query "$query" -subject "$subject" -outfmt 6 > raw_blast_results.txt
 awk '$3 > 30 && $4 > 0.9 * $5' raw_blast_results.txt > "$output"
 
 wc -l < "$output"
+
+rm raw_blast_results.txt
